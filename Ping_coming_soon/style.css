@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+    --Blue: hsl(223, 87%, 63%);
+
+    --light: 300;
+    --normal: 600;
+    --bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.content {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4.3rem 0 2rem;
+}
+
+/* Title section */
+
+.title {
+    margin: 2.4rem 2.4rem 2rem;
+}
+
+.title h1 {
+    font-size: 2.4rem;
+    font-weight: var(--light);
+    color: var(--Gray);
+}
+
+.title h1 span {
+    font-size: 2.4rem;
+    font-weight: var(--bold);
+    color: var(--Very-Dark-Blue);
+}
+
+.title p {
+    margin-top: 0.8rem;
+}
+
+/* Form section */
+
+.input-section {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.input-section input[type=email] {
+    padding: 0.9rem;
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    width: 62%;
+}
+
+::placeholder {
+    color: var(--Pale-Blue);
+}
+
+.btn {
+    padding: 0.9rem;
+    border: 1px solid var(--Blue);
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    background-color: var(--Blue);
+    color: #fff;
+    width: 29%;
+    box-shadow: var(--Pale-Blue) 0px 8px 35px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Output status */
+
+.email-error{
+    margin: 1rem;
+}
+
+.succes-msg{
+    color: green;
+}
+
+.error-msg{
+    color: red;
+}
+
+/* Image section */
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4.3rem 2rem 3.6rem;
+}
+
+.image-section img {
+    /* border: 1px solid; */
+    width: 640px;
+}
+
+/* Footer links */
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.footer-links i {
+    padding: 0.2rem;
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 50%;
+    color: var(--Blue);
+}
+
+.footer-links i:hover{
+    color: #fff;
+    background-color: var(--Blue);
+}
+
+.copyrights {
+    margin-top: 1.3rem;
+}
+
+.copyrights p {
+    font-size: 0.6rem;
+    font-weight: var(--light);
+    color: var(--Gray);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 750px) {
+    .logo img {
+        width: 106px;
+    }
+
+    /* Title */
+    .title {
+        margin: 3.8rem 0 3.4rem;
+    }
+
+    .title h1 {
+        font-size: 2.2rem;
+    }
+    
+    .title h1 span{
+        font-size: 2.2rem;
+    }
+
+    .title p {
+        font-size: 1.2rem;
+        margin-top: 1.6rem;
+    }
+
+    /* Input section */
+    .input-section {
+        flex-direction: column;
+    }
+
+    .input-section input[type=email] {
+        width: 82%;
+        font-size: 1.2rem;
+        padding: 1.2rem 3rem;
+    }
+
+    .input-section .btn {
+        width: 82%;
+        font-size: 1.2rem;
+        padding: 1.2rem 3rem;
+    }
+
+    /* Image section */
+    .image-section {
+        margin: 6.8rem 1rem 12rem;
+    }
+
+    /* Footer links */
+    .footer-links {
+        gap: 1.3rem;
+    }
+
+    .footer-links i {
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .copyrights {
+        margin-top: 2.8rem;
+    }
+
+    .copyrights p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .title h1 {
+        font-size: 2rem;
+    }
+    
+    .title h1 span{
+        font-size: 2rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+
+    /* Input section */
+    .input-section {
+        flex-direction: column;
+    }
+
+    .input-section input[type=email] {
+        width: 82%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .input-section .btn {
+        width: 82%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    /* Image section */
+    .image-section {
+        margin: 4rem 1rem 8rem;
+    }
+
+    /* Footer links */
+    .footer-links {
+        gap: 1.3rem;
+    }
+
+    .footer-links i {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    .copyrights {
+        margin-top: 1.2rem;
+    }
+
+    .copyrights p {
+        font-size: 0.8rem;
+    }
+}
