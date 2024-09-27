@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./config.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body class="font-sans min-h-screen grid place-content-center bg-mobile bg-red md:bg-desktop">
+
+  <main
+    class="grid gap-16 mx-[1.5rem] mt-[5.6rem] mb-14 max-w-sm md:grid-cols-2 md:max-w-[69rem] md:items-center md:gap-4 md:m-12">
+
+    <section class="text-center text-white md:text-left">
+      <h1 class="text-[1.7rem] font-bold leading-9 md:text-5xl">Learn to code by watching others</h1>
+      <p class="mt-6 leading-[1.6rem]">See how experienced developers solve problems in real-time. Watching scripted
+        tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section class="text-center">
+
+      <section class="text-white bg-blue py-4 px-14 leading-7 rounded-lg shadow-[0px_8px_1px_rgba(0,0,0,0.2)]">
+        <span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter
+      </section>
+
+      <form class="bg-white rounded-lg mt-6 p-[1.8rem] flex flex-col gap-4" id="submit-form">
+
+        <div class="fname-input relative">
+          <input class="border border-grayish_blue w-full p-[1rem] text-sm placeholder:font-semibold rounded-lg pr-14"
+            type="text" name="fname" id="fname" placeholder="First Name">
+
+          <div class="text-right text-sm text-red" id="fname-error"></div>
+
+        </div>
+
+        <div class="lname-input relative">
+          <input class="border border-grayish_blue w-full p-[1rem] text-sm placeholder:font-semibold rounded-lg pr-14"
+            type="text" name="lname" id="lname" placeholder="Last Name">
+
+          <div class="text-right text-sm text-red" id="lname-error"></div>
+
+        </div>
+
+        <div class="email-inpput relative">
+          <input class="border border-grayish_blue w-full p-[1rem] text-sm placeholder:font-semibold rounded-lg pr-14"
+            type="email" name="email" id="email" placeholder="Email Address">
+
+          <div class="text-right text-sm text-red" id="email-error"></div>
+
+        </div>
+
+        <div class="pass-input relative">
+          <input class="border border-grayish_blue w-full p-[1rem] text-sm placeholder:font-semibold rounded-lg pr-14"
+            type="password" name="password" id="password" placeholder="Password">
+
+          <div class="text-right text-sm text-red" id="pass-error"></div>
+
+        </div>
+
+        <button
+          class="border border-green bg-green text-white text-base font-semibold uppercase w-full p-[0.8rem] placeholder:font-semibold rounded-lg shadow-[0px_6px_0px_rgba(56,204,140,0.4)] mt-2"
+          type="submit" id="btn">Claim your free trial</button>
+
+        <div class="text-[0.6rem] px-2.5 leading-4 font-medium text-grayishBlue">
+          By clicking the button, you are agreeing to our <span class="font-bold text-red">Terms and Services</span>
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
